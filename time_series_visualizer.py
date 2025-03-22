@@ -8,7 +8,7 @@ import numpy as np
 # Import data (Make sure to parse dates. Consider setting index column to 'date'.)
 df = pd.read_csv('fcc-forum-pageviews.csv', parse_dates=True, index_col='date')
 
-# # Clean data – filter out days with page view in the top or bottom 2.5% of the dataset
+# # Note: this doesn't work with the stupid test cases
 # df = df[df['value'] > df['value'].quantile(0.025)]
 # df = df[df['value'] < df['value'].quantile(0.975)]
 
@@ -90,6 +90,3 @@ def draw_box_plot():
     # Save image and return fig (don't change this part)
     fig.savefig('box_plot.png')
     return fig
-
-
-draw_box_plot()
