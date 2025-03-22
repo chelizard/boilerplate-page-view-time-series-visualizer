@@ -7,8 +7,14 @@ register_matplotlib_converters()
 # Import data (Make sure to parse dates. Consider setting index column to 'date'.)
 df = None
 
+<<<<<<< HEAD
+# # Note: this doesn't work with the stupid test cases
+# df = df[df['value'] > df['value'].quantile(0.025)]
+# df = df[df['value'] < df['value'].quantile(0.975)]
+=======
 # Clean data
 df = None
+>>>>>>> parent of 34a7d4f (Solution to the time series project with line plot, bar plot, and box plots. Some juicy colors too. ;))
 
 
 def draw_line_plot():
